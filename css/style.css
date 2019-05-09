@@ -1,0 +1,156 @@
+@import url("fonts/Roboto/stylesheet.css");
+@import url("fonts/Oswald_Light/stylesheet.css");
+@import url("fonts/Oswald_Regular/stylesheet.css");
+
+body {
+	background-image: url("../images/background.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center; 
+	background-size: cover;
+}
+
+@media only screen and (min-width: 600px) {
+	.logo {
+		width: 300px !important;
+	}
+}
+
+.logo {
+	width: 100%;
+	height: auto;
+	padding: 25px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #fc8b38;
+  overflow: hidden;
+  background: linear-gradient(to bottom,rgba(252,139,56,1) 0%,rgba(202,116,52,1) 100%); 
+  position: relative;
+  border: none !important;
+  border-radius: 5px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 15.2px;
+  margin-bottom: 0;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.main_logo_center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+  height: 65%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+hr {
+	border: none;
+	height: 3px;
+	/* Set the hr color */
+	color: #333; /* old IE */
+	background-color: #333; /* Modern Browsers */
+}
+
+div.a {
+	font-family: "Oswald Regular";
+	text-align: center;
+	font-size: 38px;
+	color: #a10700;
+}
+
+div.b {
+	font-family: "raleway light";
+	text-align: left;
+	font-size: 18px;
+	margin: auto;
+	width: 80%;
+	padding: 10px;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/OpenSans-CondBold.ttf") format("ttf"),
+       url("/fonts/OpenSans-CondLight.ttf") format("ttf"),
+       url("/fonts/OpenSans-CondLightItalic.ttf") format("ttf"),
+}
+
+.nav-custom {
+	background: linear-gradient(to bottom,rgba(252,139,56,1) 0%,rgba(202,116,52,1) 100%);
+	font-family:	'Open Sans Condensed', sans-serif;
+}
+
+.nav-link {
+	color: #ddd !important;
+}
+
+.copyright-disclaimer {
+	display: block; padding-bottom: 10px;
+	color: #a10700;
+	font-size: 1em;
+}
+
+.container {
+	margin-top: 10px;
+}
+
+input[id^="spoiler"]{
+ display: none;
+}
+input[id^="spoiler"] + label {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  padding: 5px 20px;
+  background: #a10700;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all .6s;
+}
+input[id^="spoiler"]:checked + label {
+  color: #333;
+  background: #ccc;
+}
+input[id^="spoiler"] ~ .spoiler {
+  width: 90%;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  margin: 10px auto 0; 
+  padding: 10px; 
+  background: #eee;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: all .6s;
+}
+input[id^="spoiler"]:checked + label + .spoiler{
+  height: auto;
+  opacity: 1;
+  padding: 10px;
+}
+
